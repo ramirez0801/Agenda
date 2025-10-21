@@ -11,8 +11,12 @@ namespace Agenda.Datos
     public class ContactRepository : IRepository<Contacto>
     {
         private readonly List<Contacto> _contacts = new List<Contacto>();
-        public static int contContacts;
-        public void Add(Contacto c) => _contacts.Add(c);
+        private static int _nextId = 1;
+        public void Add(Contacto c)
+        {
+            c.Id = _nextId++;
+            _contacts.Add(c);
+        }
         public IEnumerable<Contacto> GetAll() => _contacts;
         public Contacto GetById(int id) => _contacts.FirstOrDefault(x => x.Id == id);
         public void Update(Contacto c)
