@@ -6,7 +6,7 @@ namespace Agenda.Datos
         void Add(T c);
         void Update(T c);
         void Delete(int id);
-        List<T> GetAll();
+        IEnumerable<T> GetAll();
         T GetById(int id);
     }
 }
