@@ -27,7 +27,7 @@ namespace Agenda.Negocio
 
         public void DeleteContact(int id) => _repository.Delete(id);
 
-        public Contacto GetContact(int id) => _repository.GetById(id);
+        public Contacto GetContactById(int id) => _repository.GetById(id);
 
         public IEnumerable<Contacto> GetAll() => _repository.GetAll();
 
