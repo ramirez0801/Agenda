@@ -12,13 +12,13 @@ El proyecto está pensado con fines educativos y como base sólida para aplicaci
 El proyecto está dividido en capas:
 
 Presentation (Console / UI)
-        ↓
+        -->
 Facade (AgendaFacade)
-        ↓
+        -->
 Business (ContactService)
-        ↓
+       -->
 Data (Repository)
-        ↓
+        -->
 Entities (Contact)
 
 ## Patrones de Diseño Utilizados
